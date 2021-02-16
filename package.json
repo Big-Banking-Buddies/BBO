@@ -1,0 +1,7 @@
+{
+  "name": "BBO",
+  "version": "1.0.0",
+  "dependencies": {
+    "semantic-ui-react": "^2.0.3"
+  }
+}
