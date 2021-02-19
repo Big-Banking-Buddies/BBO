@@ -1,17 +1,17 @@
 # BBO
 Educational project focused on online security of personal/sensitive information.
 
-## Milestone 1 Progress (Updated 2/19/2021)
+# Milestone 1 Progress (Updated 2/19/2021)
 
-### Completed Portion
+## Completed Portion
 
-##### Edwin:
+#### Edwin:
 Create Main Dashboard
 
-##### Yuhan:
+#### Yuhan:
 Complete Home Page
 
-##### Ronnie:
+#### Ronnie:
 Create Sign In/Login Page
 
 Integrate React and Firebase functionality
@@ -19,7 +19,7 @@ Integrate React and Firebase functionality
 ##### Nicholas:
 Create Nav Bar/Footer
 
-### Pending Portion
+## Pending Portion
 
-##### Yuhan:
+#### Yuhan:
 Combine and compile group work
