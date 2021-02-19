@@ -5,21 +5,21 @@ Educational project focused on online security of personal/sensitive information
 
 ### Completed Portion
 
-Edwin:
+##### Edwin:
 Create Main Dashboard
 
-Yuhan:
+##### Yuhan:
 Complete Home Page
 
-Ronnie:
+##### Ronnie:
 Create Sign In/Login Page
 
 Integrate React and Firebase functionality
 
-Nicholas:
+##### Nicholas:
 Create Nav Bar/Footer
 
 ### Pending Portion
 
-Yuhan:
+##### Yuhan:
 Combine and compile group work
