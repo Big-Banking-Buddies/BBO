@@ -8,18 +8,31 @@ Educational project focused on online security of personal/sensitive information
 #### Edwin:
 Create Main Dashboard
 
-#### Yuhan:
-Complete Home Page
+##### Nicholas:
+Create Nav Bar/Footer
 
 #### Ronnie:
 Create Sign In/Login Page
 
 Integrate React and Firebase functionality
 
-##### Nicholas:
-Create Nav Bar/Footer
+#### Yuhan:
+Complete Home Page
+
+
 
 ## Pending Portion
 
+#### Edwin:
+Manage Funds/Budget Page
+Improve Main Dashboard
+
+##### Nicholas:
+
+#### Ronnie:
+
 #### Yuhan:
 Combine and compile group work
+
+
+
