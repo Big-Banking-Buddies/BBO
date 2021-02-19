@@ -13,6 +13,7 @@ Complete Home Page
 
 Ronnie:
 Create Sign In/Login Page
+
 Integrate React and Firebase functionality
 
 Nicholas:
