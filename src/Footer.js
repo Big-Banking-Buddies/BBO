@@ -9,7 +9,8 @@ function Footer() {
           This project aims to explore cyber security techniques, and as such this website shouldn't <br/>
           be taken seriously with real personal information. <br/>
           University of Hawaii<br/>
-          Honolulu, HI 96826
+          Honolulu, HI 96826<br/>
+          <a href="./home.html">Home</a>
         </div>
       </footer>
   );
