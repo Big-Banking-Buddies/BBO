@@ -29,7 +29,9 @@ Improve Main Dashboard
 
 ##### Nicholas:
 
+
 #### Ronnie:
+Incorporate two-factor authentication either through email, text message, or PIN
 
 #### Yuhan:
 Combine and compile group work
