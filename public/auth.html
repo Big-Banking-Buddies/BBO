@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Big Banking Online</title>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/8.2.7/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/8.2.7/firebase-auth.js"></script>
+    <script defer src="/__/firebase/8.2.7/firebase-database.js"></script>
+    <script defer src="/__/firebase/8.2.7/firebase-firestore.js"></script>
+    <script defer src="/__/firebase/8.2.7/firebase-functions.js"></script>
+    <script defer src="/__/firebase/8.2.7/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/8.2.7/firebase-storage.js"></script>
+    <script defer src="/__/firebase/8.2.7/firebase-analytics.js"></script>
+    <script defer src="/__/firebase/8.2.7/firebase-remote-config.js"></script>
+    <script defer src="/__/firebase/8.2.7/firebase-performance.js"></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=false"></script>
+
+  </head>
+  <body>
+
+    <h1>Welcome to Big Banking Online!</h1>
+
+    <!--Login title and input fields-->
+    <div id="login_div">
+      <input type="email" placeholder="Email" id="email_field"/>
+      <input type="password" placeholder="Password" id="password_field"/>
+      <button onclick="login()">Login</button>
+    </div>
+
+    <div id="create_div">
+      <h2>Don't have an account? Create one here!</h2>
+      <input type="text" placeholder="First Name" id="create_first_name_field"/>
+      <input type="text" placeholder="Last Name" id="create_last_name_field"/>
+      <input type="email" placeholder="Email" id="create_email_field"/>
+      <input type="email" placeholder="Re-Enter Email" id="check_email_field"/>
+      <input type="password" placeholder="Password" id="create_password_field"/>
+      <input type="password" placeholder="Re-Enter Password" id="check_password_field"/>
+      <button onclick="createUser()">Create Account</button>
+    </div>
+
+    <div id="user_div">
+      <p id="user_para">Please log in!</p> 
+      <button onclick="logout()">Logout</button>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
