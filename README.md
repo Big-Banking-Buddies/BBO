@@ -19,6 +19,8 @@ Integrate React and Firebase functionality
 #### Yuhan:
 Complete Home Page
 
+Update Readme File
+
 Combine and compile group work
 
 
