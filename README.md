@@ -19,19 +19,23 @@ Integrate React and Firebase functionality
 #### Yuhan:
 Complete Home Page
 
+Combine and compile group work
 
 
 ## Pending Portion
 
 #### Edwin:
-Manage Funds/Budget Page
+Manage Funds Page
+
 Improve Main Dashboard
 
 ##### Nicholas:
-
+Budget page
 
 #### Ronnie:
+Rebuild User Auth with React
+
 Incorporate two-factor authentication either through email, text message, or PIN
 
 #### Yuhan:
-Combine and compile group work
+UI Improvement and Combining group works
