@@ -12,6 +12,7 @@
     ]
   },
   "hosting": {
+    "site": "bigbankingonline",
     "public": "public",
     "ignore": [
       "firebase.json",
