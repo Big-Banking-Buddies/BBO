@@ -5,9 +5,13 @@ import LandingPage from '../LandingPage';
 import Signup from './Signup';
 import Login from './Login';
 import Dashboard from '../Dashboard';
-import ManageFunds from '../ManageFunds'
+import ManageFunds from '../ManageFunds';
+import Profile from './Profile';
+import ForgotPassword from './ForgotPassword';
 import { AuthProvider } from '../Context/AuthContext';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import PrivateRoute from './PrivateRoute';
+
 
 function App() {
   return (
@@ -19,10 +23,12 @@ function App() {
             <AuthProvider>
               <Switch>
                 <Route path="/landing" component={LandingPage}/>
-                <Route exact path="/" component={Dashboard}/>
+                <PrivateRoute exact path="/" component={Profile}/>
+                <Route path="/dash" component={Dashboard}/>
                 <Route path="/funds" component={ManageFunds}/>
                 <Route path="/signup" component={Signup}/>
                 <Route path="/login" component={Login}/>
+                <Route path="/forgot-password" component={ForgotPassword}/>
               </Switch>
             </AuthProvider>
           </Router>
