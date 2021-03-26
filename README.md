@@ -41,3 +41,15 @@ Incorporate two-factor authentication either through email, text message, or PIN
 
 #### Yuhan:
 UI Improvement and Combining group works
+
+
+# 02/21/2021 - 03/28/2021
+
+### Progress
+
+### Link
+https://github.com/Big-Banking-Buddies/bbo
+
+### Pending
+
+### Roles and Responsibilities
