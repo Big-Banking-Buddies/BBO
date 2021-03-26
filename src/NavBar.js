@@ -4,11 +4,14 @@ import { Menu, Header } from 'semantic-ui-react';
 function NavBar() {
   return(
       <Menu>
-        <Menu.Item>
+        <Menu.Item  href="/dash">
           <Header>BBO</Header>
         </Menu.Item>
-        <Menu.Item>
-          <Header>Login</Header>
+        <Menu.Item  href="/funds">
+          <Header>Funds</Header>
+        </Menu.Item>
+        <Menu.Item  href="/">
+          <Header>Profile</Header>
         </Menu.Item>
       </Menu>
   );
