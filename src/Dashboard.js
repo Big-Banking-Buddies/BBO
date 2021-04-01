@@ -27,7 +27,8 @@ class Dashboard extends React.Component {
                                     <div>Name: John Doe</div>
                                     <div>Balance: $20</div>
                                     <div>Account Number: XXXX-XXXX-XXXX-1234</div>
-                                    <Button fluid primary={true}>Edit Account Info</Button>
+                                    <a href={'/update-profile'}><Button fluid primary={true}>Edit Account Info</Button></a>
+                                    <a href={'/funds'}><Button fluid primary={true} style={{marginTop: '1em'}}>Manage Funds</Button></a>
                                 </Card.Content>
                             </Card>
                         </Grid.Column>
