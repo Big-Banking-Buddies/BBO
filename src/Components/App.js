@@ -12,6 +12,7 @@ import { AuthProvider } from '../Context/AuthContext';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import PrivateRoute from './PrivateRoute';
 import UpdateProfile from './UpdateProfile';
+import TransactionHistory from "../TransactionHistory";
 
 
 function App() {
@@ -26,7 +27,8 @@ function App() {
                 <Route path="/landing" component={LandingPage}/>
                 <PrivateRoute exact path="/" component={Profile}/>
                 <PrivateRoute path="/update-profile" component={UpdateProfile}/>
-                <Route path="/dash" component={Dashboard}/>
+                <PrivateRoute path="/dash" component={Dashboard}/>
+                <PrivateRoute path="/history" component={TransactionHistory}/>
                 <Route path="/funds" component={ManageFunds}/>
                 <Route path="/signup" component={Signup}/>
                 <Route path="/login" component={Login}/>

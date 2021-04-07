@@ -13,6 +13,9 @@ function NavBar() {
         <Menu.Item  href="/">
           <Header>Profile</Header>
         </Menu.Item>
+        <Menu.Item  href="/history">
+          <Header>History</Header>
+        </Menu.Item>
       </Menu>
   );
 
