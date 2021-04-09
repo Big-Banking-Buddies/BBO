@@ -4,6 +4,7 @@ import firebase from 'firebase';
 import { useAuth } from './Context/AuthContext';
 import { Alert } from 'react-bootstrap';
 import useDropdown from './Components/useDropDown';
+import { v4 as uuidv4 } from 'uuid';
 
 export default function ManageFunds() {
   const ref = firebase.firestore().collection("posts");
@@ -14,13 +15,13 @@ export default function ManageFunds() {
   const [balanceA, setBalanceA] = useState(0);
   const [balanceB, setBalanceB] = useState(0);
   const [transferAmount, setTransferAmount] = useState(0);
+  const [note, setNote] = useState('');
 
-  const [bankOut, setBankOut] = useState("bankA");
-  const [bankIn, setBankIn] = useState("bankB");
+  const [bankOut, setBankOut] = useState('');
+  const [bankIn, setBankIn] = useState('');
 
 
   useEffect(() => {
-    fetchData()
   }, [])
 
   const fetchData = async () => {
@@ -42,6 +43,10 @@ export default function ManageFunds() {
     try {
       setError('')
       setMessage('')
+      if (bankIn == '' || bankOut == ''){
+        setError("Please select banks.")
+        return;
+      }
       if (bankIn == bankOut){
         setError("Transfer must be between two different banks.")
         return;
@@ -66,6 +71,14 @@ export default function ManageFunds() {
       db.collection(bankIn).doc(currentUser.email).set({balance: newBalanceB});
       setBalanceA(newBalanceA);
       setBalanceB(newBalanceB);
+      db.collection("transferHistory").doc(uuidv4()).set({
+        account: currentUser.email,
+        amount: transferAmount,
+        bankOut: bankOut,
+        bankIn: bankIn,
+        timestamp: new Date(),
+        note: note
+      })
       setMessage('Successfully transferred $' + transferAmount + ' from ' + bankOut + ' to ' + bankIn + '.');
     } catch{
       setError('Unexpected Error Occurs.')
@@ -101,7 +114,7 @@ export default function ManageFunds() {
                   fluid
                   selection
                   options={bankOptions}
-                  onChange={(e,{value})=> {setBankOut(value); fetchData()}}
+                  onChange={(e,{value})=> setBankOut(value)}
               />
             </Grid.Column>
             {/*Available Amount: {bankOut + ' ' + balanceA}*/}
@@ -118,7 +131,7 @@ export default function ManageFunds() {
                   fluid
                   selection
                   options={bankOptions}
-                  onChange={(e,{value})=> {setBankIn(value); fetchData()}}
+                  onChange={(e,{value})=> setBankIn(value)}
               />
             </Grid.Column>
             {/*Available Amount: {bankIn + ' ' + balanceB}*/}
@@ -137,11 +150,11 @@ export default function ManageFunds() {
             </Grid.Column>
             {/*{transferAmount}*/}
             <Grid.Column width={7}>
-              Date to Transfer
-              <Input
-                  placeholder='MM/DD/YYYY'
-                  fluid
-              />
+              {/*Date to Transfer*/}
+              {/*<Input*/}
+              {/*    placeholder='MM/DD/YYYY'*/}
+              {/*    fluid*/}
+              {/*/>*/}
             </Grid.Column>
           </Grid.Row>
         </Grid>
@@ -150,7 +163,10 @@ export default function ManageFunds() {
             <Grid.Column width={14}>
               Note
               <Form>
-                <TextArea placeholder='Leave a note for yourself about this transfer'/>
+                <TextArea
+                    placeholder='Leave a note for yourself about this transfer'
+                    onChange={(e,{value})=> setNote(value)}
+                />
               </Form>
             </Grid.Column>
           </Grid.Row>
