@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react"
 import { Form, Button, Card, Alert, Container } from "react-bootstrap"
 import { useAuth } from '../Context/AuthContext'
 import { Link, useHistory } from 'react-router-dom';
+import firebase from '../firebase';
 
 export default function Signup() {
   const emailRef = useRef()
@@ -21,6 +22,9 @@ export default function Signup() {
       setError('')
       setLoading(true)
       await signup(emailRef.current.value, passwordRef.current.value)
+      const db = firebase.firestore();
+      db.collection('bankA').doc(emailRef.current.value).set({balance: 100});
+      db.collection('bankB').doc(emailRef.current.value).set({balance: 100});
       history.push("/")
     } catch {
       setError('Failed to create an account')

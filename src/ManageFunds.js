@@ -66,7 +66,7 @@ export default function ManageFunds() {
       db.collection(bankIn).doc(currentUser.email).set({balance: newBalanceB});
       setBalanceA(newBalanceA);
       setBalanceB(newBalanceB);
-      setMessage('Transfer succeeded.');
+      setMessage('Successfully transferred $' + transferAmount + ' from ' + bankOut + ' to ' + bankIn + '.');
     } catch{
       setError('Unexpected Error Occurs.')
     }
