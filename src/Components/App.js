@@ -23,8 +23,8 @@ function App() {
           <Router>
             <AuthProvider>
               <Switch>
-                <Route path="/landing" component={LandingPage}/>
-                <PrivateRoute exact path="/" component={Profile}/>
+                <Route exact path="/" component={LandingPage}/>
+                <PrivateRoute path="/profile" component={Profile}/>
                 <PrivateRoute path="/update-profile" component={UpdateProfile}/>
                 <PrivateRoute path="/dash" component={Dashboard}/>
                 <PrivateRoute path="/funds" component={ManageFunds}/>

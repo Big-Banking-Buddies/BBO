@@ -45,7 +45,7 @@ export default function Signup() {
         timestamp: new Date(),
         note: 'Here is the gift from Big Buddy Bank, hope you enjoy :)'
       })
-      history.push("/")
+      history.push("/dash")
     } catch {
       setError('Failed to create an account')
       setLoading(false)

@@ -10,7 +10,7 @@ function NavBar() {
         <Menu.Item  href="/funds">
           <Header>Funds</Header>
         </Menu.Item>
-        <Menu.Item  href="/">
+        <Menu.Item  href="/profile">
           <Header>Profile</Header>
         </Menu.Item>
       </Menu>

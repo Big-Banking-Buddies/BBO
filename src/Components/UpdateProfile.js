@@ -16,7 +16,7 @@ export default function UpdateProfile() {
   function handleSubmit(e) {
     e.preventDefault()
     if (passwordRef.current.value !== passwordConfirmRef.current.value) {
-      return setError("Passwords do not match")
+      return setError("Passwords do not match.")
     }
 
     const promises = []
@@ -32,7 +32,7 @@ export default function UpdateProfile() {
 
     Promise.all(promises)
         .then(() => {
-          history.push("/")
+          history.push("/dash")
         })
         .catch(() => {
           setError("Failed to update account")
