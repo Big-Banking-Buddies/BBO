@@ -29,7 +29,7 @@ function App() {
                 <PrivateRoute path="/update-profile" component={UpdateProfile}/>
                 <PrivateRoute path="/dash" component={Dashboard}/>
                 <PrivateRoute path="/history" component={TransactionHistory}/>
-                <Route path="/funds" component={ManageFunds}/>
+                <PrivateRoute path="/funds" component={ManageFunds}/>
                 <Route path="/signup" component={Signup}/>
                 <Route path="/login" component={Login}/>
                 <Route path="/forgot-password" component={ForgotPassword}/>
