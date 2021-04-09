@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="dbb69d4a-adb3-4a61-9005-3cd02ab92402" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Signup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ManageFunds.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ManageFunds.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

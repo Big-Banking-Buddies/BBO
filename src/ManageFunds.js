@@ -3,7 +3,6 @@ import { Container, Grid, Dropdown, Icon, Input, Form, TextArea, Button } from "
 import firebase from 'firebase';
 import { useAuth } from './Context/AuthContext';
 import { Alert } from 'react-bootstrap';
-import useDropdown from './Components/useDropDown';
 import { v4 as uuidv4 } from 'uuid';
 
 export default function ManageFunds() {

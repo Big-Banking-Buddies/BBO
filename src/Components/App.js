@@ -26,7 +26,7 @@ function App() {
                 <Route path="/landing" component={LandingPage}/>
                 <PrivateRoute exact path="/" component={Profile}/>
                 <PrivateRoute path="/update-profile" component={UpdateProfile}/>
-                <Route path="/dash" component={Dashboard}/>
+                <PrivateRoute path="/dash" component={Dashboard}/>
                 <PrivateRoute path="/funds" component={ManageFunds}/>
                 <Route path="/signup" component={Signup}/>
                 <Route path="/login" component={Login}/>
