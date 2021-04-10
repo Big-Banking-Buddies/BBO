@@ -4,12 +4,8 @@
     <list default="true" id="dbb69d4a-adb3-4a61-9005-3cd02ab92402" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Login.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/PrivateRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/PrivateRoute.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Signup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/UpdateProfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UpdateProfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LandingPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/LandingPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/NavBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/NavBar.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +49,7 @@
       <recent name="$PROJECT_DIR$/src/Components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Components" />
       <recent name="$PROJECT_DIR$/src/Components" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/public" />

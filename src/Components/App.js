@@ -1,4 +1,4 @@
-import NavBar from '../NavBar';
+import NavBar from './NavBar';
 import Footer from '../Footer';
 import 'semantic-ui-css/semantic.min.css';
 import LandingPage from '../LandingPage';
@@ -13,27 +13,24 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import PrivateRoute from './PrivateRoute';
 import UpdateProfile from './UpdateProfile';
 
-
 function App() {
   return (
       <>
-        <NavBar/>
-
-
-          <Router>
-            <AuthProvider>
-              <Switch>
-                <Route exact path="/" component={LandingPage}/>
-                <PrivateRoute path="/profile" component={Profile}/>
-                <PrivateRoute path="/update-profile" component={UpdateProfile}/>
-                <PrivateRoute path="/dash" component={Dashboard}/>
-                <PrivateRoute path="/funds" component={ManageFunds}/>
-                <Route path="/signup" component={Signup}/>
-                <Route path="/login" component={Login}/>
-                <Route path="/forgot-password" component={ForgotPassword}/>
-              </Switch>
-            </AuthProvider>
-          </Router>
+        <Router>
+          <AuthProvider>
+            <NavBar/>
+            <Switch>
+              <Route exact path="/" component={LandingPage}/>
+              <PrivateRoute path="/profile" component={Profile}/>
+              <PrivateRoute path="/update-profile" component={UpdateProfile}/>
+              <PrivateRoute path="/dash" component={Dashboard}/>
+              <PrivateRoute path="/funds" component={ManageFunds}/>
+              <Route path="/signup" component={Signup}/>
+              <Route path="/login" component={Login}/>
+              <Route path="/forgot-password" component={ForgotPassword}/>
+            </Switch>
+          </AuthProvider>
+        </Router>
         <Footer/>
       </>
   );
