@@ -1,4 +1,4 @@
-import NavBar from '../NavBar';
+import NavBar from './NavBar';
 import Footer from '../Footer';
 import 'semantic-ui-css/semantic.min.css';
 import LandingPage from '../LandingPage';
@@ -14,29 +14,26 @@ import PrivateRoute from './PrivateRoute';
 import UpdateProfile from './UpdateProfile';
 import WishList from '../WishList';
 
-
 function App() {
   return (
       <>
-        <NavBar/>
-
-
-          <Router>
-            <AuthProvider>
-              <Switch>
-                <Route path="/landing" component={LandingPage}/>
-                <PrivateRoute exact path="/" component={Profile}/>
-                <PrivateRoute path="/update-profile" component={UpdateProfile}/>
-                <Route path="/dash" component={Dashboard}/>
-                <Route path="/funds" component={ManageFunds}/>
-                <Route path="/wish-list" component={WishList}/>
-                <Route path="/signup" component={Signup}/>
-                <Route path="/login" component={Login}/>
-                <Route path="/forgot-password" component={ForgotPassword}/>
-              </Switch>
-            </AuthProvider>
-          </Router>
-        <Footer />
+        <Router>
+          <AuthProvider>
+            <NavBar/>
+            <Switch>
+              <Route exact path="/" component={LandingPage}/>
+              <PrivateRoute path="/profile" component={Profile}/>
+              <PrivateRoute path="/update-profile" component={UpdateProfile}/>
+              <PrivateRoute path="/dash" component={Dashboard}/>
+              <PrivateRoute path="/funds" component={ManageFunds}/>
+              <Route path="/wish-list" component={WishList}/>
+              <Route path="/signup" component={Signup}/>
+              <Route path="/login" component={Login}/>
+              <Route path="/forgot-password" component={ForgotPassword}/>
+            </Switch>
+          </AuthProvider>
+        </Router>
+        <Footer/>
       </>
   );
 }

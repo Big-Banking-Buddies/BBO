@@ -1,7 +1,10 @@
+// Reference: https://youtu.be/PKwu15ldZ7k
 import React, { useRef, useState } from "react"
 import { Form, Button, Card, Alert, Container } from "react-bootstrap"
 import { useAuth } from '../Context/AuthContext'
 import { Link, useHistory } from 'react-router-dom';
+import firebase from '../firebase';
+import { v4 as uuidv4 } from 'uuid';
 
 export default function Signup() {
   const emailRef = useRef()
@@ -11,6 +14,7 @@ export default function Signup() {
   const [error, setError] = useState('')
   const [loading, setLoading] = useState(false)
   const history = useHistory()
+  const initialBalance = 100;
 
   async function handleSubmit(e) {
     e.preventDefault()
@@ -21,7 +25,27 @@ export default function Signup() {
       setError('')
       setLoading(true)
       await signup(emailRef.current.value, passwordRef.current.value)
-      history.push("/")
+      const db = firebase.firestore();
+      // set initial balance and history
+      db.collection('bankA').doc(emailRef.current.value).set({balance: initialBalance});
+      db.collection('bankB').doc(emailRef.current.value).set({balance: initialBalance});
+      db.collection("transferHistory").doc(uuidv4()).set({
+        account: emailRef.current.value,
+        amount: initialBalance,
+        bankOut: 'big-buddy-bank',
+        bankIn: 'bankA',
+        timestamp: new Date(),
+        note: 'Here is the gift from Big Buddy Bank, hope you enjoy :)'
+      })
+      db.collection("transferHistory").doc(uuidv4()).set({
+        account: emailRef.current.value,
+        amount: initialBalance,
+        bankOut: 'big-buddy-bank',
+        bankIn: 'bankB',
+        timestamp: new Date(),
+        note: 'Here is the gift from Big Buddy Bank, hope you enjoy :)'
+      })
+      history.push("/dash")
     } catch {
       setError('Failed to create an account')
       setLoading(false)

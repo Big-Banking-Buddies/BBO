@@ -1,3 +1,4 @@
+// Reference: https://youtu.be/PKwu15ldZ7k
 import React, { useRef, useState } from "react"
 import { Form, Button, Card, Alert, Container } from "react-bootstrap"
 import { useAuth } from '../Context/AuthContext'
@@ -17,7 +18,7 @@ export default function Login() {
       setError('')
       setLoading(true)
       await login(emailRef.current.value, passwordRef.current.value)
-      history.push("/")
+      history.push("/dash")
     } catch {
       setError('Failed to sign in')
       setLoading(false)

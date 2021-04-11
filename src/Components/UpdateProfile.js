@@ -1,3 +1,4 @@
+// Reference: https://youtu.be/PKwu15ldZ7k
 import React, { useRef, useState } from "react"
 import { Form, Button, Card, Alert, Container } from "react-bootstrap"
 import { useAuth } from "../Context/AuthContext"
@@ -15,7 +16,7 @@ export default function UpdateProfile() {
   function handleSubmit(e) {
     e.preventDefault()
     if (passwordRef.current.value !== passwordConfirmRef.current.value) {
-      return setError("Passwords do not match")
+      return setError("Passwords do not match.")
     }
 
     const promises = []
@@ -31,7 +32,7 @@ export default function UpdateProfile() {
 
     Promise.all(promises)
         .then(() => {
-          history.push("/")
+          history.push("/dash")
         })
         .catch(() => {
           setError("Failed to update account")
