@@ -3,7 +3,7 @@ import { Grid, List } from 'semantic-ui-react';
 
 function Footer() {
   return (
-      <footer style={{ background: 'black', color: 'white', position: 'fixed', width: '100%', bottom: '0', padding: '25px 100px 25px 100px', alignContent: 'center' }}>
+      <footer style={{ background: 'black', color: 'white', width: '100%', bottom: '0', padding: '25px 100px 25px 100px', alignContent: 'center' }}>
         <Grid>
           <Grid.Row>
             <Grid.Column width={3}>

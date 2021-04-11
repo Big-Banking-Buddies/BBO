@@ -1,7 +1,6 @@
 import React from 'react';
 import {Card, Feed, Grid, Image, Button, Progress} from "semantic-ui-react";
 
-
 class Dashboard extends React.Component {
     constructor() {
         super();
@@ -12,7 +11,7 @@ class Dashboard extends React.Component {
 
     render() {
         return (
-            <div style={{height: '100%'}}>
+            <div style={{height: '100%', paddingBottom: '50px' }}>
                 <Grid>
                     <Grid.Row centered columns={2}>
                         <Grid.Column width={6} className={'dashboard-box'}>

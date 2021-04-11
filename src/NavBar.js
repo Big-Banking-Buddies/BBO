@@ -13,6 +13,9 @@ function NavBar() {
         <Menu.Item  href="/">
           <Header>Profile</Header>
         </Menu.Item>
+        <Menu.Item  href="/wish-list">
+          <Header>Wish List</Header>
+        </Menu.Item>
       </Menu>
   );
 
