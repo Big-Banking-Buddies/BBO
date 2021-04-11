@@ -31,6 +31,9 @@ export default function NavBar() {
               <Menu.Item href="/funds">
                 <Header>Funds</Header>
               </Menu.Item>
+              <Menu.Item href="/wish-list">
+                <Header>Wish List</Header>
+              </Menu.Item>
               <Menu.Menu position='right'>
                 <Menu.Item href="/profile">
                   <Header>Profile</Header>

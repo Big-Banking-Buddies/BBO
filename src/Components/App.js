@@ -12,6 +12,7 @@ import { AuthProvider } from '../Context/AuthContext';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import PrivateRoute from './PrivateRoute';
 import UpdateProfile from './UpdateProfile';
+import WishList from '../WishList';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
               <PrivateRoute path="/update-profile" component={UpdateProfile}/>
               <PrivateRoute path="/dash" component={Dashboard}/>
               <PrivateRoute path="/funds" component={ManageFunds}/>
+              <Route path="/wish-list" component={WishList}/>
               <Route path="/signup" component={Signup}/>
               <Route path="/login" component={Login}/>
               <Route path="/forgot-password" component={ForgotPassword}/>

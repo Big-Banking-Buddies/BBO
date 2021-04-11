@@ -2,10 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dbb69d4a-adb3-4a61-9005-3cd02ab92402" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Components/NavBar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/ForgotPassword.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ForgotPassword.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Login.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/PrivateRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/PrivateRoute.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/NavBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Signup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/UpdateProfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UpdateProfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Context/AuthContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Context/AuthContext.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LandingPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/LandingPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ManageFunds.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ManageFunds.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/NavBar.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +33,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1oTDLaRMAjFPsg6OTOd12Dgqzyc" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
