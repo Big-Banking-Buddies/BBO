@@ -26,7 +26,7 @@ function App() {
               <PrivateRoute path="/update-profile" component={UpdateProfile}/>
               <PrivateRoute path="/dash" component={Dashboard}/>
               <PrivateRoute path="/funds" component={ManageFunds}/>
-              <Route path="/wish-list" component={WishList}/>
+              <PrivateRoute path="/wish-list" component={WishList}/>
               <Route path="/signup" component={Signup}/>
               <Route path="/login" component={Login}/>
               <Route path="/forgot-password" component={ForgotPassword}/>
