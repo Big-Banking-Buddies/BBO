@@ -16,6 +16,9 @@ function NavBar() {
         <Menu.Item  href="/wish-list">
           <Header>Wish List</Header>
         </Menu.Item>
+        <Menu.Item  href="/history">
+          <Header>History</Header>
+        </Menu.Item>
       </Menu>
   );
 
