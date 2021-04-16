@@ -72,7 +72,9 @@ class Dashboard extends React.Component {
                                     </Feed>
                                 </Card.Content>
                                 <Card.Content>
-                                    <Button fluid primary={true}>View Full History</Button>
+                                    <a href={'/history'}>
+                                        <Button fluid primary={true}>View Full History</Button>
+                                    </a>
                                 </Card.Content>
                             </Card>
                         </Grid.Column>
