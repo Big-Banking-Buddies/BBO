@@ -45,33 +45,35 @@ export default function UpdateBudget() {
   }
 
   return (
-      <Container style={{ height: '100%', paddingTop: '50px', paddingBottom: '50px', maxWidth: '200px' }}>
-        <h2 style={{ textAlign: 'center' }}>Transfer Funds</h2>
+      <Container className="d-flex align-items-center justify-content-center" style={{ minHeight: "75vh" }}>
+        <div className="w-100" style={{ maxWidth: "400px" }}>
+          <h2 style={{ textAlign: 'center' }}>Budget Reset</h2>
 
-        {message && <Alert variant="success">{message}</Alert>}
-        {error && <Alert variant="danger">{error}</Alert>}
+          {message && <Alert variant="success">{message}</Alert>}
+          {error && <Alert variant="danger">{error}</Alert>}
 
-        <Grid>
-          <Grid.Row centered>
-            <Grid.Column width={16}>
-              Amount
-              <Input
-                  placeholder='Enter Amount (must be integer)'
-                  onChange={e => setBudgetAmount(parseInt(e.target.value))}
-                  fluid
-              />
-            </Grid.Column>
-          </Grid.Row>
-        </Grid>
+          <Grid>
+            <Grid.Row centered>
+              <Grid.Column width={10}>
+                Amount
+                <Input
+                    placeholder='Enter Amount (must be integer)'
+                    onChange={e => setBudgetAmount(parseInt(e.target.value))}
+                    fluid
+                />
+              </Grid.Column>
+            </Grid.Row>
+          </Grid>
 
 
-        <Grid>
-          <Grid.Row columns={1} centered>
-            <Grid.Column width={14}>
-              <Button primary fluid onClick={onSubmit}>Submit</Button>
-            </Grid.Column>
-          </Grid.Row>
-        </Grid>
+          <Grid>
+            <Grid.Row columns={1} centered>
+              <Grid.Column width={10}>
+                <Button primary fluid onClick={onSubmit}>Submit</Button>
+              </Grid.Column>
+            </Grid.Row>
+          </Grid>
+        </div>
       </Container>
   )
 }
