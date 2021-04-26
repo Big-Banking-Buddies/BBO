@@ -189,7 +189,7 @@ export default function ManageFunds() {
   ]
 
   return (
-      <Container style={{ height: '100%' }}>
+      <Container style={{ height: '100%', paddingTop: '50px', paddingBottom: '50px' }}>
         <h2 style={{ textAlign: 'center' }}>Transfer Funds</h2>
 
         {message && <Alert variant="success">{message}</Alert>}

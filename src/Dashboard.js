@@ -47,7 +47,7 @@ export default function Dashboard() {
       setName(firstname + ' ' + lastname);
       const budget = profile.docs.find(doc => doc.id === currentUser.email).get("budget");
       setBudget(budget);
-      const progress = balance < budget ? balance / budget * 100 : 100;
+      const progress = balance < budget ? (balance / budget * 100).toFixed(2) : 100;
       setProgress(progress);
       const from = profile.docs.find(doc => doc.id === currentUser.email).get("from");
       setBudgetFrom(from);
@@ -64,7 +64,7 @@ export default function Dashboard() {
   }, [])
 
   return (
-      <div style={{ height: '100%', paddingBottom: '50px' }}>
+      <div style={{ height: '100%', paddingBottom: '50px', paddingTop: '50px' }}>
         {loading ?
             <Dimmer active inverted style={{ height: '100%', paddingBottom: '50px' }}>
               <Loader inverted content='Loading'/>

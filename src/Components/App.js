@@ -14,6 +14,7 @@ import PrivateRoute from './PrivateRoute';
 import UpdateProfile from './UpdateProfile';
 import TransactionHistory from "../TransactionHistory";
 import WishList from '../WishList';
+import UpdateBudget from '../UpdateBudget';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
                 <PrivateRoute path="/history" component={TransactionHistory}/>
               <PrivateRoute path="/funds" component={ManageFunds}/>
               <PrivateRoute path="/wish-list" component={WishList}/>
+              <PrivateRoute path="/budget" component={UpdateBudget}/>
               <Route path="/signup" component={Signup}/>
               <Route path="/login" component={Login}/>
               <Route path="/forgot-password" component={ForgotPassword}/>
