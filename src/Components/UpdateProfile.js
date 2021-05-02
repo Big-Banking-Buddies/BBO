@@ -91,7 +91,7 @@ export default function UpdateProfile() {
                 </Form.Group>
 
                 <Form.Group id="lastname">
-                  <Form.Label>First Name</Form.Label>
+                  <Form.Label>Last Name</Form.Label>
                   <Form.Control
                       type="lastname"
                       ref={lastnameRef}
