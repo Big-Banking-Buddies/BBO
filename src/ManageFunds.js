@@ -56,7 +56,7 @@ export default function ManageFunds() {
           return;
         }
       } else {
-        if (bankIn === '') {
+        if (bankIn === '' && type === 'deposit') {
           setError('Please select a bank.')
           return;
         }
