@@ -14,6 +14,9 @@ export default function UpdateBudget() {
   // const [balanceB, setBalanceB] = useState(0);
   const [budgetAmount, setBudgetAmount] = useState(0);
   const [type, setType] = useState('transfer');
+  const [year, setYear] = useState('');
+  const [month, setMonth] = useState('');
+  const [day, setDay] = useState('');
 
   useEffect(() => {
   }, [])
@@ -27,8 +30,8 @@ export default function UpdateBudget() {
       const firstname = profile.docs.find(doc => doc.id === currentUser.email).get("firstname");
       const lastname = profile.docs.find(doc => doc.id === currentUser.email).get("lastname");
       const from = new Date();
-      const to = new Date('2021-12-31T10:10:10');
-      console.log(from);
+      const dateString = year + '-' + month + '-' + day + 'T10:10:10'
+      const to = new Date(dateString);
       db.collection("profile").doc(currentUser.email).set({
         budget: budgetAmount,
         firstname: firstname,
@@ -59,6 +62,32 @@ export default function UpdateBudget() {
                 <Input
                     placeholder='Enter Amount (must be integer)'
                     onChange={e => setBudgetAmount(parseInt(e.target.value))}
+                    fluid
+                />
+              </Grid.Column>
+            </Grid.Row>
+            <Grid.Row centered>
+              <Grid.Column width={5}>
+                Month
+                <Input
+                    placeholder='MM'
+                    onChange={e => setMonth(e.target.value)}
+                    fluid
+                />
+              </Grid.Column>
+              <Grid.Column width={5}>
+                Day
+                <Input
+                    placeholder='DD'
+                    onChange={e => setDay(e.target.value)}
+                    fluid
+                />
+              </Grid.Column>
+              <Grid.Column width={5}>
+                Year
+                <Input
+                    placeholder='YYYY'
+                    onChange={e => setYear(e.target.value)}
                     fluid
                 />
               </Grid.Column>
