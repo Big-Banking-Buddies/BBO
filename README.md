@@ -118,3 +118,40 @@ Full site styling
 
 #### Yuhan:
 Update Profile page
+
+
+# Milestone 3 Progress (Updated 4/11/2021)
+## Completed Portion
+
+#### Edwin:
+Transaction History Page
+
+##### Nicholas:
+Wish List Page
+
+#### Ronnie:
+Determined 2FA is not viable on Firebase without creating a library for it from scratch.
+
+#### Yuhan:
+Manage Funds Page Functionality Improvement
+
+Navbar Improvement
+
+## Pending Portion
+
+#### Edwin:
+Further improvements to transaction history
+
+Dashboard improvements
+
+
+##### Nicholas:
+Wish List Page Improvement
+
+#### Ronnie:
+Site cleanup
+
+Style changes
+
+#### Yuhan:
+Update Profile page

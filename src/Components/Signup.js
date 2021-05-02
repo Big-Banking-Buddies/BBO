@@ -15,6 +15,11 @@ export default function Signup() {
   const [loading, setLoading] = useState(false)
   const history = useHistory()
   const initialBalance = 100;
+  const firstname = 'Joseph';
+  const lastname = 'Joestar';
+  const from = new Date();
+  const to = new Date();
+  const budget = 1000;
 
   async function handleSubmit(e) {
     e.preventDefault()
@@ -29,6 +34,13 @@ export default function Signup() {
       // set initial balance and history
       db.collection('bankA').doc(emailRef.current.value).set({balance: initialBalance});
       db.collection('bankB').doc(emailRef.current.value).set({balance: initialBalance});
+      db.collection('profile').doc(emailRef.current.value).set({
+        firstname: firstname,
+        lastname: lastname,
+        budget: budget,
+        from: from,
+        to: to
+      });
       db.collection("transferHistory").doc(uuidv4()).set({
         account: emailRef.current.value,
         amount: initialBalance,

@@ -28,6 +28,7 @@ export default function Profile() {
               {error && <Alert variant="danger">{error}</Alert>}
               <strong>Email: </strong> {currentUser.email}
               <Link to="/update-profile" className="btn btn-primary w-100 mt-3">Update Profile</Link>
+              <Link to="/budget" className="btn btn-primary w-100 mt-3">Update Budget</Link>
             </Card.Body>
           </Card>
           <div className="w-100 text-center mt-2">
