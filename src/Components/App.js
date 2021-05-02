@@ -15,6 +15,7 @@ import UpdateProfile from './UpdateProfile';
 import TransactionHistory from "../TransactionHistory";
 import WishList from '../WishList';
 import UpdateBudget from '../UpdateBudget';
+import Admin from "../Admin";
 
 function App() {
   return (
@@ -27,10 +28,11 @@ function App() {
               <PrivateRoute path="/profile" component={Profile}/>
               <PrivateRoute path="/update-profile" component={UpdateProfile}/>
               <PrivateRoute path="/dash" component={Dashboard}/>
-                <PrivateRoute path="/history" component={TransactionHistory}/>
+              <PrivateRoute path="/history" component={TransactionHistory}/>
               <PrivateRoute path="/funds" component={ManageFunds}/>
               <PrivateRoute path="/wish-list" component={WishList}/>
               <PrivateRoute path="/budget" component={UpdateBudget}/>
+              <PrivateRoute path="/admin" component={Admin}/>
               <Route path="/signup" component={Signup}/>
               <Route path="/login" component={Login}/>
               <Route path="/forgot-password" component={ForgotPassword}/>
