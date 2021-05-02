@@ -32,6 +32,10 @@ function WishList () {
 
   const handleSubmit = () => {
     let newId = listIndex + 1;
+    if (itemText.length > 20) {
+      window.alert('Input Item name is too long.');
+      return;
+    }
     if (!webLink.includes('www.amazon.com')) {
       window.alert('Input Link was not an Amazon Link and might be unsafe.');
       return;
