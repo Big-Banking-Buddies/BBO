@@ -25,20 +25,17 @@ export default function TransactionHistory() {
                     <Card.Header>Transaction History</Card.Header>
                 </Card.Content>
                 <Card.Content>
-                    <Card.Header>Filter Options</Card.Header>
-                </Card.Content>
-                <Card.Content>
                     <Feed>
                         {
                             transactionHistory.map((history) => {
                                 let transaction = history.data();
                                 return (
                                     <Feed.Event>
-                                        {/*<Feed.Label icon={`${transaction.type === 'withdrawl' ? 'arrow up' : 'arrow down'}`} />*/}
+                                        <Feed.Label icon={`${transaction.type === 'withdrawal' ? 'arrow up' : (transaction.type === 'transfer' ? 'arrows alternate horizontal' : 'arrow down')}`} />
                                         <Feed.Content>
-                                            <Feed.Date content={transaction.timestamp.toDate().toString()} />
+                                            <Feed.Date content={`${transaction.timestamp.toDate().getMonth().toString()}/${transaction.timestamp.toDate().getDate().toString()}/${transaction.timestamp.toDate().getFullYear().toString()}`}/>
                                             <Feed.Summary>
-                                                {`Transferred $${transaction.amount} from ${transaction.bankOut} to ${transaction.bankIn}`}
+                                                {`${transaction.type === 'transfer' ? 'Transferred' : (transaction.type === 'withdrawal' ? 'Withdrew' : 'Deposited')} $${transaction.amount} ${(transaction.type !== 'deposit') ? 'from' : ''} ${transaction.bankOut} ${(transaction.type === 'withdrawal') ? '' : 'to'} ${transaction.bankIn}`}
                                             </Feed.Summary>
                                         </Feed.Content>
                                     </Feed.Event>
