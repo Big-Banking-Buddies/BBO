@@ -30,8 +30,9 @@ https://github.com/Big-Banking-Buddies/bbo/blob/main/README.md
 
 https://github.com/Big-Banking-Buddies/bbo/wiki
 
+# Project Development Progress
 
-# Milestone 4 Progress (Updated 5/2/2021)
+## Milestone 4 Progress (Updated 5/2/2021)
 
 #### Yuhan 
 Dashboard and additional function on manage funds page
@@ -47,8 +48,8 @@ Update the Wishlist to enable local database
 #### Ronnie
 Some styling suggestions
 
-# Milestone 3 Progress (Updated 4/11/2021)
-## Completed Portion
+## Milestone 3 Progress (Updated 4/11/2021)
+### Completed Portion
 
 #### Edwin:
 Transaction History Page
@@ -64,7 +65,7 @@ Manage Funds Page Functionality Improvement
 
 Navbar Improvement
 
-## Pending Portion
+### Pending Portion
 
 #### Edwin:
 Further improvements to transaction history
@@ -84,9 +85,9 @@ Style changes
 Update Profile page
 
 
-# 02/21/2021 - 03/28/2021
+## 02/21/2021 - 03/28/2021
 
-## Progress
+### Progress
 New User Auth setup
  - Login
  - Profile
@@ -100,10 +101,10 @@ Navbar updated
 Manage Funds Page Created
 
 
-## Link
+### Link
 https://github.com/Big-Banking-Buddies/bbo
 
-## Pending
+### Pending
 Budget Page
 
 Dashboard Improvements
@@ -114,7 +115,7 @@ Two step authentication (2FA)
 
 Full site styling
 
-## Roles and Responsibilities
+### Roles and Responsibilities
 
 ### New Completions
 
@@ -161,9 +162,9 @@ Full site styling
 Update Profile page
 
 
-# Milestone 1 Progress (Updated 2/19/2021)
+## Milestone 1 Progress (Updated 2/19/2021)
 
-## Completed Portion
+### Completed Portion
 
 #### Edwin:
 Create Main Dashboard
@@ -184,14 +185,14 @@ Update Readme File
 Combine and compile group work
 
 
-## Pending Portion
+### Pending Portion
 
 #### Edwin:
 Manage Funds Page
 
 Improve Main Dashboard
 
-##### Nicholas:
+#### Nicholas:
 Budget page
 
 #### Ronnie:
