@@ -1,46 +1,87 @@
 # BBO
-Educational project focused on online security of personal/sensitive information.
 
-# Milestone 1 Progress (Updated 2/19/2021)
+Educational project focused on online security of personal/sensitive information. You need to install the project to your local computer to run the app.
 
+# Install Instructions
+
+1. Download the project https://github.com/Big-Banking-Buddies/bbo/releases
+2. Open the terminal and run "npm install" to get the dependencies.
+3. Open another terminal and run "npm run database" to start the local database for the wishlist function (You may skip this if you don't want to use the Wishlist).
+4. Run "npm start" to start the localhost.
+
+# Developer Notes
+
+This project is overall a good experience learning and practicing the secure development concepts from the class materials. All the teammates worked together and successfully made a web application that is more secure than our previous projects. Most of the designed functionalities have been integrated into the final version. Due to the time constraint and the lack of familiarity with the Remote database, some pages should be more completed than what we have for now.
+
+# Onlne Repository
+
+https://github.com/Big-Banking-Buddies/bbo
+
+
+# Project Documentation
+
+### Readme File
+https://github.com/Big-Banking-Buddies/bbo/blob/main/README.md
+
+### Report
+ --- (Fill this part)
+
+# Project Wiki
+
+https://github.com/Big-Banking-Buddies/bbo/wiki
+
+
+# Milestone 4 Progress (Updated 5/2/2021)
+
+#### Yuhan 
+Dashboard and additional function on manage funds page
+Update-profle page and Update-budget page
+Wiki Pages and ReadMe Documentation
+
+#### Edwin
+Admin Page
+
+#### Nicholas
+Update the Wishlist to enable local database
+
+#### Ronnie
+Some styling suggestions
+
+# Milestone 3 Progress (Updated 4/11/2021)
 ## Completed Portion
 
 #### Edwin:
-Create Main Dashboard
+Transaction History Page
 
 ##### Nicholas:
-Create Nav Bar/Footer
+Wish List Page
 
 #### Ronnie:
-Create Sign In/Login Page
-
-Integrate React and Firebase functionality
+Determined 2FA is not viable on Firebase without creating a library for it from scratch.
 
 #### Yuhan:
-Complete Home Page
+Manage Funds Page Functionality Improvement
 
-Update Readme File
-
-Combine and compile group work
-
+Navbar Improvement
 
 ## Pending Portion
 
 #### Edwin:
-Manage Funds Page
+Further improvements to transaction history
 
-Improve Main Dashboard
+Dashboard improvements
+
 
 ##### Nicholas:
-Budget page
+Wish List Page Improvement
 
 #### Ronnie:
-Rebuild User Auth with React
+Site cleanup
 
-Incorporate two-factor authentication either through email, text message, or PIN
+Style changes
 
 #### Yuhan:
-UI Improvement and Combining group works
+Update Profile page
 
 
 # 02/21/2021 - 03/28/2021
@@ -120,38 +161,43 @@ Full site styling
 Update Profile page
 
 
-# Milestone 3 Progress (Updated 4/11/2021)
+# Milestone 1 Progress (Updated 2/19/2021)
+
 ## Completed Portion
 
 #### Edwin:
-Transaction History Page
+Create Main Dashboard
 
 ##### Nicholas:
-Wish List Page
+Create Nav Bar/Footer
 
 #### Ronnie:
-Determined 2FA is not viable on Firebase without creating a library for it from scratch.
+Create Sign In/Login Page
+
+Integrate React and Firebase functionality
 
 #### Yuhan:
-Manage Funds Page Functionality Improvement
+Complete Home Page
 
-Navbar Improvement
+Update Readme File
+
+Combine and compile group work
+
 
 ## Pending Portion
 
 #### Edwin:
-Further improvements to transaction history
+Manage Funds Page
 
-Dashboard improvements
-
+Improve Main Dashboard
 
 ##### Nicholas:
-Wish List Page Improvement
+Budget page
 
 #### Ronnie:
-Site cleanup
+Rebuild User Auth with React
 
-Style changes
+Incorporate two-factor authentication either through email, text message, or PIN
 
 #### Yuhan:
-Update Profile page
+UI Improvement and Combining group works
