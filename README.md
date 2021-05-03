@@ -24,7 +24,7 @@ https://github.com/Big-Banking-Buddies/bbo
 https://github.com/Big-Banking-Buddies/bbo/blob/main/README.md
 
 ### Report
- --- (Fill this part)
+https://github.com/Big-Banking-Buddies/bbo/blob/main/Secure%20Development%20Life%20Cycle%20Final%20Report.pdf
 
 # Project Wiki
 
