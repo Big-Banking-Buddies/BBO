@@ -36,20 +36,26 @@ https://github.com/Big-Banking-Buddies/bbo/wiki
 
 #### Yuhan 
 Dashboard and additional function on manage funds page
+
 Update-profile page and Update-budget page
+
 Wiki Pages and ReadMe Documentation
 
 #### Edwin
 Report: Certified Release & Archive Report
+
 Admin Page
+
 Transaction History styling improvements
 
 #### Nicholas
 Report: Incident Response Plan
+
 Update the Wishlist to enable local database
 
 #### Ronnie
 Report: Final Security Review
+
 Some styling suggestions
 
 ## Milestone 3 Progress (Updated 4/11/2021)
@@ -57,24 +63,29 @@ Some styling suggestions
 
 #### Edwin:
 Report: Static Analysis Review
+
 Transaction History Page
 
 ##### Nicholas:
 Report: Dynamic Review
+
 Wish List Page
 
 #### Ronnie:
 Report: Fuzz Testing
+
 Determined 2FA is not viable on Firebase without creating a library for it from scratch.
 
 #### Yuhan:
 Manage Funds Page Functionality Improvement
+
 Navbar Improvement
 
 ### Pending Portion
 
 #### Edwin:
 Further improvements to transaction history
+
 Dashboard improvements
 
 ##### Nicholas:
@@ -82,6 +93,7 @@ Wish List Page Improvement
 
 #### Ronnie:
 Site cleanup
+
 Style changes
 
 #### Yuhan:
@@ -96,8 +108,11 @@ New User Auth setup
  - Profile
  - Sign up
  - Password reset
+
 Home page updated
+
 Navbar updated
+
 Manage Funds Page Created
 
 
@@ -106,9 +121,13 @@ https://github.com/Big-Banking-Buddies/bbo
 
 ### Pending
 Budget Page
+
 Dashboard Improvements
+
 Wishlist Page
+
 Two step authentication (2FA)
+
 Full site styling
 
 ### Roles and Responsibilities
@@ -120,11 +139,14 @@ Create Manage Funds Page
 
 #### Nicholas:
 Report: Dynamic Analysis Section
+
 Updated Footer
+
 Dynamic Analysis
 
 #### Ronnie:
 Report: Attack Surface Review
+
 Attack Surface Review
 
 #### Yuhan:
@@ -165,20 +187,26 @@ Update Profile page
 
 #### Edwin:
 Report: Depreceated/Unsafe Runctions Section
+
 Create Main Dashboard
 
 ##### Nicholas:
 Report: Static Analysis Section
+
 Create Nav Bar/Footer
 
 #### Ronnie:
 Report: Approved Tools Section
+
 Create Sign In/Login Page
+
 Integrate React and Firebase functionality
 
 #### Yuhan:
 Complete Home Page
+
 Update Readme File
+
 Combine and compile group work
 
 
