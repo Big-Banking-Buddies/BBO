@@ -13,7 +13,7 @@ Educational project focused on online security of personal/sensitive information
 
 This project is overall a good experience learning and practicing the secure development concepts from the class materials. All the teammates worked together and successfully made a web application that is more secure than our previous projects. Most of the designed functionalities have been integrated into the final version. Due to the time constraint and the lack of familiarity with the Remote database, some pages should be more completed than what we have for now.
 
-# Onlne Repository
+# Online Repository
 
 https://github.com/Big-Banking-Buddies/bbo
 
@@ -36,11 +36,12 @@ https://github.com/Big-Banking-Buddies/bbo/wiki
 
 #### Yuhan 
 Dashboard and additional function on manage funds page
-Update-profle page and Update-budget page
+Update-profile page and Update-budget page
 Wiki Pages and ReadMe Documentation
 
 #### Edwin
 Admin Page
+Transaction History styling improvements
 
 #### Nicholas
 Update the Wishlist to enable local database
