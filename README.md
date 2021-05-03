@@ -34,26 +34,26 @@ https://github.com/Big-Banking-Buddies/bbo/wiki
 
 ## Milestone 4 Progress (Updated 5/2/2021)
 
-#### Yuhan 
+#### Yuhan:
 Dashboard and additional function on manage funds page
 
 Update-profile page and Update-budget page
 
 Wiki Pages and ReadMe Documentation
 
-#### Edwin
+#### Edwin:
 Report: Certified Release & Archive Report
 
 Admin Page
 
 Transaction History styling improvements
 
-#### Nicholas
+#### Nicholas:
 Report: Incident Response Plan
 
 Update the Wishlist to enable local database
 
-#### Ronnie
+#### Ronnie:
 Report: Final Security Review
 
 Some styling suggestions
